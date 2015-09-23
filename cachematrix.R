@@ -1,13 +1,12 @@
-## R Programming assignment 2: The first of the two functions
-## below will take a numeric matrix 'm', and cache both the 
-## numeric matrix itself and its inverse. The second function
-## will return the inverse of whatever "matrix" it is passed, 
-## provided it is passed a cached "matrix" (i.e. NOT a true matrix) 
+## R Programming assignment 2: The first of the two functions 
+## below will take a non-singular matrix 'm' and cache its
+## inverse. The second function will return the inverse of 
+## a matrix, provided the function is passed a "cached matrix"
 ## like the one returned by the first function.
 
 
 ## The 'makeCacheMatrix' function takes a matrix 'm' as an 
-## argument and returns a list with four functions: set, get, 
+## argument and returns a list of four functions: set, get, 
 ## setinv, and getinv. Calling makeCacheMatrix(m)$get() will
 ## return the matrix 'm', and calling 
 ## makeCacheMatrix(m)$getinv() will return the inverse of 'm'.
